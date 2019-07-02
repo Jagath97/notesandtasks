@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_note_black_24dp"
+            android:title="@string/notes" />
+        <item
+            android:id="@+id/nav_remainders"
+            android:icon="@drawable/ic_notifications_active_black_24dp"
+            android:title="@string/remainders" />
+       </group>
+    <group>
+    <item android:title="Notes">
+
+        <menu >
+            <item
+                android:id="@+id/nav_archived"
+                android:icon="@drawable/ic_archive_black_24dp"
+                android:title="@string/archived" />
+
+        </menu>
+    </item>
+    </group>
+       <group>
+        <item android:title="@string/tools">
+
+        <menu >
+
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/help_feedback"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="@string/help_feedback" />
+
+        </menu>
+        </item>
+    </group>
+
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jagath.notesandtasks">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/myiconround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivityLauncher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".splashscreen.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NoteCreation"
+            android:parentActivityName=".MainActivityLauncher" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivityLauncher" />
+        <activity
+            android:name=".ArchivedNotes"
+            android:parentActivityName=".MainActivityLauncher" />
+        <activity android:name=".RemainderView"
+            android:parentActivityName=".MainActivityLauncher" />
+        <activity android:name=".GetAllRemainders"
+            android:label="Reminders"
+            android:parentActivityName=".MainActivityLauncher"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".AddRemainderActivity"
+            android:label="Add Reminder"
+            android:parentActivityName=".GetAllRemainders"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <provider
+            android:authorities="com.example.jagath.notesandtasks"
+            android:name=".AlarmRemainderProvider"
+            android:exported="false"/>
+        <service android:name=".ReminderAlarmService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

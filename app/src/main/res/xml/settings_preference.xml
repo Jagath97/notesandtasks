@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <PreferenceCategory
+     android:title="Design"/>
+ <ListPreference
+  android:key="list1"
+  android:title="ListPreference"
+  android:summary="Select item"
+  android:entries="@array/colors"
+  android:entryValues="@array/colors"
+  android:defaultValue="Red"/>
+ <EditTextPreference
+  android:key="edittext"
+  android:title="Name"
+  android:summary="Change Name here"/>
+ <CheckBoxPreference
+  android:key="check"
+  android:title="Check this"/>
+ <SwitchPreference
+  android:key="swithc"
+  android:title="On/Off"/>
+</PreferenceScreen>

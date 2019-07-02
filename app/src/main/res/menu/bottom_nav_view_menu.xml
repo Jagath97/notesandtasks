@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/view_note"
+        android:title="@string/notes"
+        android:icon="@drawable/ic_note_black_24dp"/>
+    <item
+        android:id="@+id/write_note"
+        android:title="@string/new_note"
+        android:icon="@drawable/ic_note_add_black_24dp"/>
+    <item
+        android:id="@+id/view_remainder"
+        android:title="Remainders"
+        android:icon="@drawable/ic_event_note_black_24dp" />
+</menu>

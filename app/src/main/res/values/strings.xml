@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">My Notes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="help_feedback"><![CDATA[Help & feedback]]></string>
+    <string name="settings">Settings</string>
+    <string name="tools">Tools</string>
+    <string name="remainders">Remainders</string>
+    <string name="notes">Notes</string>
+    <string name="title_note">Title</string>
+    <string name="content_note">Content</string>
+    <string name="new_note">New Note</string>
+    <string name="camera">Camera</string>
+    <string name="edited">Edited:</string>
+    <string name="remainder">Remainder</string>
+    <string name="pinned">Pinned</string>
+    <string name="archived">Archived</string>
+    <string name="appearence">Appearence</string>
+    <string name="choose_app_color">Choose App color</string>
+    <string name="app_color">App Color</string>
+    <string name="select">Select</string>
+    <string name="remainder_settings">Remainder Settings</string>
+    <string name="_8_00_am">8:00 AM</string>
+    <string name="appearance">Appearance</string>
+    <string name="about">About</string>
+    <string name="add_remainder">Add Remainder</string>
+    <string name="select_date">Select Date</string>
+    <string-array name="colors">
+        <item>Default</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Grey</item>
+        <item>Dark Grey</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="repeat">
+        <item>Does not repeat</item>
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+</resources>
